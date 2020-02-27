@@ -1,3 +1,5 @@
+import path from 'path'
+import fs from 'fs'
 
 export default {
   mode: 'spa',
@@ -53,6 +55,24 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+    }
+  },
+  /**
+   * Custom generate routes
+   */
+  generate: {
+    routes () {
+      let clientJson = fs.readFileSync(path.join(__dirname, './clients.json'))
+      clientJson = JSON.parse(clientJson)
+      const caseStudies = clientJson.caseStudies
+      const caseStudyRoutes = []
+      for (const caseStudy of caseStudies) {
+        caseStudyRoutes.push({
+          route: '/casestudy/' + caseStudy.slug,
+          payload: caseStudy
+        })
+      }
+      return caseStudyRoutes
     }
   }
 }
