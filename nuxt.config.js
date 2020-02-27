@@ -1,7 +1,12 @@
 import path from 'path'
 import fs from 'fs'
 
+const clientJson = JSON.parse( fs.readFileSync(path.join(__dirname, './clients.json')) )
+
 export default {
+  env: {
+    dev: process.env.NODE_ENV === 'development'
+  },
   mode: 'spa',
   /*
   ** Headers of the page
@@ -58,12 +63,10 @@ export default {
     }
   },
   /**
-   * Custom generate routes
+   * Custom generate routes for production
    */
   generate: {
     routes () {
-      let clientJson = fs.readFileSync(path.join(__dirname, './clients.json'))
-      clientJson = JSON.parse(clientJson)
       const caseStudies = clientJson.caseStudies
       const caseStudyRoutes = []
       for (const caseStudy of caseStudies) {
