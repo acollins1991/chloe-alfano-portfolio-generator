@@ -1,6 +1,8 @@
 import path from 'path'
 import fs from 'fs'
 
+require('dotenv').config()
+
 const clientJson = JSON.parse(fs.readFileSync(path.join(__dirname, './clients.json')))
 
 export default {
@@ -78,5 +80,11 @@ export default {
       }
       return caseStudyRoutes
     }
+  },
+  /**
+   * Middleware
+   */
+  router: {
+    middleware: 'passwordProtect'
   }
 }
