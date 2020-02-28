@@ -1,6 +1,6 @@
-# chloe
+# Portfolio and Case Study generator
 
-> My groovy Nuxt.js project
+> Custom portfolio site using Nuxt static file generation and json files to protect case study identity
 
 ## Build Setup
 
@@ -10,10 +10,6 @@ $ npm install
 
 # serve with hot reload at localhost:3000
 $ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
 
 # generate static project
 $ npm run generate
