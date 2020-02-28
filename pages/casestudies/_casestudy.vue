@@ -1,7 +1,5 @@
 <template>
-  <div>
-    testing
-  </div>
+  <div>testing</div>
 </template>
 
 <script>
@@ -11,11 +9,17 @@ export default {
   name: 'CaseStudy',
   data () {
     return {
-      slug: this.$route.params.casestudy
+      caseStudy: {}
     }
   },
   computed: {
     ...mapState(['clientData'])
+  },
+  mounted () {
+    const filteredCaseStudies = this.clientData.caseStudies.filter((caseStudy) => {
+      return caseStudy.slug === this.$route.params.casestudy
+    })
+    this.caseStudy = filteredCaseStudies[0]
   }
 }
 </script>

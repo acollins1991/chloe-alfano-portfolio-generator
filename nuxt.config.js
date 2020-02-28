@@ -1,11 +1,12 @@
 import path from 'path'
 import fs from 'fs'
 
-const clientJson = JSON.parse( fs.readFileSync(path.join(__dirname, './clients.json')) )
+const clientJson = JSON.parse(fs.readFileSync(path.join(__dirname, './clients.json')))
 
 export default {
   env: {
-    dev: process.env.NODE_ENV === 'development'
+    dev: process.env.NODE_ENV === 'development',
+    caseStudyPassword: process.env.CLIENT_PAGE_PASSWORD
   },
   mode: 'spa',
   /*
