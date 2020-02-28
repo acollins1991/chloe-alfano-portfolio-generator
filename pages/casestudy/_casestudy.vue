@@ -1,5 +1,5 @@
 <template>
-  <div>testing</div>
+  <div>{{ caseStudy.slug }}</div>
 </template>
 
 <script>
