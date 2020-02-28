@@ -13,7 +13,7 @@
     <div
       v-if="sectionData.backgroundElement"
       class="absolute col__background-element"
-      :class="sectionData.backgroundElement.widthClass + ' ' + sectionData.backgroundElement.heightClass + ' ' + sectionData.backgroundElement.positionClass"
+      :class="sectionData.backgroundElement.classes"
       :style="{ backgroundColor: sectionData.backgroundElement.color }"
     />
   </section>

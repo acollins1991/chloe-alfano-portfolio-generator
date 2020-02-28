@@ -30,10 +30,8 @@
             }
           ],
           "backgroundElement": {
-            "widthClass": "full-width",
-            "heightClass": "half-height",
-            "color": "#f4f4f4",
-            "positionClass": "left-0 bottom-0"
+            "classes":"half-height full-width left-0 bottom-0",
+            "color": "#f4f4f4"
           }
         },
         {
@@ -49,10 +47,8 @@
             }
           ],
           "backgroundElement": {
-            "widthClass": "full-width",
-            "heightClass": "full-height",
-            "color": "#f4f4f4",
-            "positionClass": "left-0 bottom-0"
+            "classes": "full-height full-width left-0 top-0",
+            "color": "#f4f4f4"
           }
         }
       ]
