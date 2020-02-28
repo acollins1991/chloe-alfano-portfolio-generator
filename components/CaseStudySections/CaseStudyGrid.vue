@@ -5,14 +5,14 @@
         <div
           :key="index"
           class="col"
-          :class="column.widthClass"
+          :class="column.classes"
           v-html="column.content"
         />
       </template>
     </div>
     <div
       v-if="sectionData.backgroundElement"
-      class="absolute col__background-element"
+      class="absolute background-element"
       :class="sectionData.backgroundElement.classes"
       :style="{ backgroundColor: sectionData.backgroundElement.color }"
     />
@@ -31,16 +31,7 @@ export default {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.col {
-  padding-left: 12px;
-  padding-right: 12px;
-  &:first-child {
-    padding-left: 0;
-  }
-  &:nth-child(2) {
-    padding-right: 0;
-  }
-  &__background-element {
+.background-element {
     z-index: -1;
     &.full-height {
       height: 100%;
@@ -55,5 +46,4 @@ export default {
       width: 100%;
     }
   }
-}
 </style>

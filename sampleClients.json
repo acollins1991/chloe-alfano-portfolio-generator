@@ -12,11 +12,11 @@
           "name": "CaseStudyGrid",
           "columns": [
             {
-              "widthClass": "w-2/5",
+              "classes": "w-2/5 pr-3",
               "content": "<p>html content</p>"
             },
             {
-              "widthClass": "w-3/5",
+              "classes": "w-3/5 pl-3",
               "content": "<p>html content</p>"
             }
           ]
@@ -25,7 +25,7 @@
           "name": "CaseStudyGrid",
           "columns": [
             {
-              "widthClass": "w-100",
+              "classes": "w-100",
               "content": "<img src='https://via.placeholder.com/2000x800'>"
             }
           ],
@@ -38,11 +38,11 @@
           "name": "CaseStudyGrid",
           "columns": [
             {
-              "widthClass": "w-2/5",
+              "classes": "w-2/5",
               "content": "<p>html content</p>"
             },
             {
-              "widthClass": "w-3/5",
+              "classes": "w-3/5",
               "content": "<p>html content</p>"
             }
           ],
