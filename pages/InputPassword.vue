@@ -26,7 +26,7 @@ export default {
       return string === process.env.caseStudyPassword
     },
     addCookie: () => {
-      window.localStorage.setItem('cfPasswordProvided', true)
+      window.localStorage.setItem('cfPasswordProvided', process.env.caseStudyPassword)
     },
     logIn () {
       if (!this.validatePassword(this.$refs.passwordInput.value)) {

@@ -3,7 +3,7 @@ export default function ({ route, redirect }) {
     return
   }
   // If is a casestudy page and password has not been provided
-  if (!window.localStorage.getItem('cfPasswordProvided') && window.localStorage.getItem('cfPasswordProvided') !== true) {
+  if (!window.localStorage.getItem('cfPasswordProvided') && window.localStorage.getItem('cfPasswordProvided') !== process.env.caseStudyPassword) {
     return redirect('/inputpassword')
   }
 }
