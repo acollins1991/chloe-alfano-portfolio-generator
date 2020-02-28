@@ -9,11 +9,13 @@
 <script>
 import { mapState } from 'vuex'
 import CaseStudyBanner from '@/components/CaseStudySections/CaseStudyBanner'
+import CaseStudyGrid from '@/components/CaseStudySections/CaseStudyGrid'
 
 export default {
   name: 'CaseStudy',
   components: {
-    CaseStudyBanner
+    CaseStudyBanner,
+    CaseStudyGrid
   },
   data () {
     return {

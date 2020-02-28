@@ -39,7 +39,7 @@ export default {
 .container {
   min-height: 100vh;
   @media (min-width: 992px) {
-    min-height: 400px;
+    min-height: 500px;
   }
 }
 </style>

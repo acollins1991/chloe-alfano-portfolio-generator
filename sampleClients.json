@@ -7,6 +7,19 @@
           "name": "CaseStudyBanner",
           "backgroundImage": "https://via.placeholder.com/2000x800",
           "textContent": "<h1 class='text-5xl mb-5'>Testing title</h1><p>testing body content</p>"
+        },
+        {
+          "name": "CaseStudyGrid",
+          "columns": [
+            {
+              "widthClass": "w-2/5",
+              "content": "<p>html content</p>"
+            },
+            {
+              "widthClass": "w-3/5",
+              "content": "<p>html content</p>"
+            }
+          ]
         }
       ]
     }
