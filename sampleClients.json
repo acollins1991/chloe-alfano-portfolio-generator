@@ -20,6 +20,40 @@
               "content": "<p>html content</p>"
             }
           ]
+        },
+        {
+          "name": "CaseStudyGrid",
+          "columns": [
+            {
+              "widthClass": "w-100",
+              "content": "<img src='https://via.placeholder.com/2000x800'>"
+            }
+          ],
+          "backgroundElement": {
+            "widthClass": "full-width",
+            "heightClass": "half-height",
+            "color": "#f4f4f4",
+            "positionClass": "left-0 bottom-0"
+          }
+        },
+        {
+          "name": "CaseStudyGrid",
+          "columns": [
+            {
+              "widthClass": "w-2/5",
+              "content": "<p>html content</p>"
+            },
+            {
+              "widthClass": "w-3/5",
+              "content": "<p>html content</p>"
+            }
+          ],
+          "backgroundElement": {
+            "widthClass": "full-width",
+            "heightClass": "full-height",
+            "color": "#f4f4f4",
+            "positionClass": "left-0 bottom-0"
+          }
         }
       ]
     }
