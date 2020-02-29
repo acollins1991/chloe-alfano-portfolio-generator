@@ -92,3 +92,4 @@ sw.*
 # Custom
 clients.json
 .vscode
+htdocs
