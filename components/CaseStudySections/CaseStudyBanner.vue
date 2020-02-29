@@ -8,7 +8,7 @@
         class="container mx-auto px-4 relative z-10 flex flex-wrap justify-center content-center"
       >
         <span
-          class="flex-none text-center text-white"
+          class="text-center text-white"
           v-html="sectionData.textContent"
         />
       </div>
@@ -37,6 +37,7 @@ export default {
   }
 }
 .container {
+  max-width: 800px;
   min-height: 100vh;
   @media (min-width: 992px) {
     min-height: 500px;
